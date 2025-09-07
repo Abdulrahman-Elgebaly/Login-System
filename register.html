@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/media.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="main-color">
+    <div class="d-flex vh-100 justify-content-center align-items-center">
+      <div class="w-50 p-5 mx-auto my-shadow second-color phone" id="log">
+        <h1 class="text-center">Register</h1>
+        <input
+        oninput="userNameValidation()"
+          id="signUpName"
+          type="text"
+          class="form-control my-3"
+          placeholder="Enter Your Name"
+        />
+        <div id="userNameAlert" class="alert alert-danger d-none text-center"></div>
+        <input
+        oninput="userEmailValidation()"
+          id="signUpEmail"
+          type="email"
+          class="form-control my-3"
+          placeholder="Enter Your Email"
+        />
+        <div id="emailAlert" class="alert alert-danger d-none text-center"></div>
+        <input
+         oninput="userInputsValidations()"
+          id="signUpPass"
+          type="password"
+          class="form-control my-3"
+          placeholder="Enter Your Password"
+        />
+        <div id="passwordAlert" class="alert alert-danger d-none text-center"></div>
+        <div id="message" class="alert alert-danger d-none text-center"></div>
+        <button onclick="add()" id="btn" class="btn btn-outline-dark w-100">Sign Up</button>
+        <p class="my-2">
+          You have an account?
+          <a class="text-primary" href="index.html">Sign In</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>
+

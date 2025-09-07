@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/media.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="main-color">
+    <div class="d-flex vh-100 justify-content-center align-items-center">
+      <div class="w-50 p-5 mx-auto second-color my-shadow phone" id="log">
+        <h1 class="text-center">Login</h1>
+
+   
+        <input
+          id="logEmail"
+          type="email"
+          class="form-control my-3"
+          placeholder="example@gmail.com"
+        />
+        <div id="emailAlert" class="alert alert-danger d-none text-center"></div>
+
+   
+        <input
+          id="logPass"
+          type="password"
+          class="form-control my-3"
+          placeholder="Enter Your Password"
+        />
+        <div id="message" class="alert alert-danger d-none text-center"></div>
+
+       
+        <button id="login" class="btn btn-outline-dark w-100">Login</button>
+
+        <p class="my-2">
+          Don’t have an account? <a href="register.html">Sign Up</a>
+        </p>
+      </div>
+    </div>
+
+   
+    <script src="js/login.js"></script>
+  </body>
+</html>

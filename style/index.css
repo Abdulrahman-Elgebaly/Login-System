@@ -1,0 +1,12 @@
+.main-color{
+    background-color: #4F200D !important;
+}
+.second-color{
+    background-color: #FF9A00;
+}
+.home-text{
+  color:#FF9A00 !important;
+}
+.my-shadow{
+  box-shadow: 0 4px 20px rgba(0,0,0,1);
+}
